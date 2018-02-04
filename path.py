@@ -137,11 +137,11 @@ for i in range(len(index)-1):
 _max_limit =  get_max(set([(len(distance_matrix)-1)]), distance_matrix, len(distance_matrix)-1)
 _min_limit =  get_min(distance_matrix)
 
-# for i in range(1):
-#     visited[i] = True
-#     dfs(distance_matrix, visited, [len(index)-1,i], distance_matrix[len(index)-1][i], len(index)-2)
-#     visited[i] = False
-_shortest_path = [1,2,3,4,5]
+for i in range(len(visited)):
+    visited[i] = True
+    dfs(distance_matrix, visited, [len(index)-1,i], distance_matrix[len(index)-1][i], len(index)-2)
+    visited[i] = False
+
 
 for i in _shortest_path:
     print index[i] + ' -> ',
