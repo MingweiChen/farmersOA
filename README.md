@@ -12,7 +12,10 @@ I did a research about the possible algorithm:
  - Naive: Use DFS to traverse all nodes and get the shortest path, the time complexity is O(n!), it is too slow.
  - Dynamic Programming: It requires 2^n space complexity. It is impossible to be run on current machines.
  - Branch and Bound Method: It is based on naive version and requires some pruning. My code is based on the algorithm.
-Also, there are some heuristic algorithm, e.g. genetic algorithm and simulated annealing. They are targeted at local optimum rather than the global optimum.
+ - Also, there are some heuristic algorithm, e.g. genetic algorithm and simulated annealing. They are targeted at local optimum rather than the global optimum.
+
+## Assumption
+ - A -> B is symmetric to B -> A, in other words, distance(A, B) = distance(B, A)
 
 ## Demo
  - make sure you have installed python 2.7 and pip
@@ -25,3 +28,6 @@ sudo pip install googlemaps
 ```
 python path.py
 ```
+
+## Reference 
+ - Little, John D. C.; Murty, Katta G.; Sweeney, Dura W.; Karel, Caroline (1963). "An algorithm for the traveling salesman problem" Operations Research. 11 (6): 972–989.
